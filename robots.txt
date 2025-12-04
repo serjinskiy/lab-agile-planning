@@ -1,0 +1,12 @@
+# robots.txt for Qbic Ads
+
+User-agent: *
+Allow: /
+
+# Disallow admin and private files
+Disallow: /handler.php
+Disallow: /leads.csv
+Disallow: /*.php$
+
+# Sitemap location
+Sitemap: https://yoursite.com/sitemap.xml
