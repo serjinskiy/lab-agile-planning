@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="ru" class="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qbic Ads - Performance Google Ads для ecommerce. Запуск и ведение рекламы Google Ads для интернет-магазинов в Европе, США и Украине.">
+    <meta name="keywords" content="Google Ads, ecommerce, интернет-магазин, реклама, PMax, Shopping, ROAS">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Qbic Ads - Performance Google Ads для ecommerce">
+    <meta property="og:description" content="Запускаем и ведём Google Ads для интернет-магазинов с упором на прибыль">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/5854ED/ffffff?text=Qbic+Ads">
+
+    <title>Qbic Ads - Performance Google Ads для ecommerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>Q</text></svg>">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:wght@400;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cookie Notification -->
+    <div id="cookieNotice" class="cookie-notice hidden">
+        <div class="cookie-content">
+            <p data-i18n="cookie_text">Мы используем cookies для улучшения работы сайта. Продолжая использовать сайт, вы соглашаетесь с нашей политикой конфиденциальности.</p>
+            <button id="acceptCookies" class="btn btn-primary" data-i18n="cookie_accept">Принять</button>
+        </div>
+    </div>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://t.me/qbicads" target="_blank" class="float-btn telegram" aria-label="Telegram">
+            <i class="fab fa-telegram"></i>
+        </a>
+        <a href="https://wa.me/380630595594" target="_blank" class="float-btn whatsapp" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+        <button id="scrollToTop" class="float-btn scroll-top hidden" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="#hero" class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2C10.059 2 2 10.059 2 20C2 29.941 10.059 38 20 38C29.941 38 38 29.941 38 20C38 10.059 29.941 2 20 2ZM20 6C27.72 6 34 12.28 34 20C34 27.72 27.72 34 20 34C12.28 34 6 27.72 6 20C6 12.28 12.28 6 20 6Z" fill="var(--primary)"/>
+                        <circle cx="16" cy="16" r="3" fill="var(--primary)"/>
+                        <circle cx="24" cy="16" r="3" fill="var(--primary)"/>
+                        <circle cx="16" cy="24" r="3" fill="var(--primary)"/>
+                        <circle cx="24" cy="24" r="3" fill="var(--primary)"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="logo-name">Qbic Ads</span>
+                        <span class="logo-tagline" data-i18n="nav_tagline">Performance Google Ads для ecommerce</span>
+                    </div>
+                </a>
+
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <!-- Nav Menu -->
+                <div class="nav-menu" id="navMenu">
+                    <a href="#services" class="nav-link" data-i18n="nav_services">Услуги</a>
+                    <a href="#process" class="nav-link" data-i18n="nav_process">Как работаем</a>
+                    <a href="#cases" class="nav-link" data-i18n="nav_cases">Кейсы</a>
+                    <a href="#pricing" class="nav-link" data-i18n="nav_pricing">Тарифы</a>
+                    <a href="#reporting" class="nav-link" data-i18n="nav_reporting">Отчётность</a>
+                    <a href="#contacts" class="nav-link" data-i18n="nav_contacts">Контакты</a>
+                </div>
+
+                <!-- Right Section -->
+                <div class="nav-right">
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button class="lang-btn" data-lang="ru">RU</button>
+                        <button class="lang-btn" data-lang="ua">UA</button>
+                        <button class="lang-btn" data-lang="en">EN</button>
+                    </div>
+
+                    <!-- Theme Toggle -->
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+
+                    <!-- CTA Button -->
+                    <a href="#contacts" class="btn btn-primary" data-i18n="nav_cta">Бесплатный аудит аккаунта</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <span class="badge" data-i18n="hero_badge">Google Ads под ecommerce</span>
+                <h1 class="hero-title">
+                    <span data-i18n="hero_title_1">Запускаем и ведём</span>
+                    <span class="highlight">Google Ads</span>
+                    <span data-i18n="hero_title_2">для интернет-магазинов с упором на прибыль для вашего бизнеса</span>
+                </h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">
+                    Работаем с ecommerce проектами в Европе, США и Украине. Строим структуру под выручку и маржу. Настройка Google Ads с нуля, ведение, аналитика и отчётность — полный цикл.
+                </p>
+                <div class="hero-cta">
+                    <a href="https://t.me/qbicads" class="btn btn-large btn-icon" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        <span data-i18n="hero_cta_telegram">Связаться через Telegram</span>
+                    </a>
+                    <a href="https://wa.me/380630595594" class="btn btn-large btn-secondary btn-icon" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-i18n="hero_cta_whatsapp">Связаться через WhatsApp</span>
+                    </a>
+                </div>
+                <div class="hero-highlight" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-check-circle"></i>
+                    <div>
+                        <p data-i18n="hero_highlight_1">Без долгих договоров — ежемесячная оплата</p>
+                        <p data-i18n="hero_highlight_2">Прозрачная отчётность по выручке и ROAS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                <img src="https://placehold.co/600x500/EFEFEF/5854ED?text=Google+Ads+Dashboard" alt="Google Ads Dashboard" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="stats_title">Qbic Ads в цифрах</h2>
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number" data-count="47">0</div>
+                    <div class="stat-label" data-i18n="stats_projects">успешных ecommerce проектов</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">$<span data-count="2.8">0</span>M+</div>
+                    <div class="stat-label" data-i18n="stats_budget">управляемый рекламный бюджет</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number" data-count="4.7">0</div>
+                    <div class="stat-label" data-i18n="stats_roas">средний ROAS по портфелю клиентов</div>
+                </div>
+                <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-number" data-count="92">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label" data-i18n="stats_retention">клиентов продлевают контракт</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="services_title">Что именно мы делаем в Google Ads</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="services_subtitle">Строим структуру, которая выдерживает масштабирование и не ломается при росте бюджетов.</p>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 data-i18n="service_1_title">Shopping и PMax</h3>
+                    <p data-i18n="service_1_desc">Структура фида, custom labels под доходность, отдельные кампании под товары с разной эффективностью. PMax не в хаосе, а под конкретную стратегию.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 data-i18n="service_2_title">Поисковые кампании Google Ads</h3>
+                    <p data-i18n="service_2_desc">Семантика по категориям и брендам, минусация, разделение по маржинальности. Покрываем горячий и тёплый спрос, режем нецелевые запросы.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 data-i18n="service_3_title">Регулярная оптимизация кампаний</h3>
+                    <p data-i18n="service_3_desc">Еженедельная оптимизация, поиск точек роста, аккуратное увеличение бюджета без убийства ROAS. Фиксируем гипотезы в отчётах.</p>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-analytics"></i>
+                    </div>
+                    <h3 data-i18n="service_4_title">Аналитика и аудит</h3>
+                    <p data-i18n="service_4_desc">Аудит аккаунта и фида, настройка конверсий, базовые отчёты в Looker Studio. Отображаем, что происходит с деньгами, а не только с кликами.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h2 class="section-title" data-i18n="about_title">Кто стоит за Qbic Ads</h2>
+                    <p data-i18n="about_p1">Мы — небольшая команда перформанс-специалистов, которые работают с Google Ads для ecommerce с 2019 года.</p>
+
+                    <h3 data-i18n="about_approach">Наш подход:</h3>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> <span data-i18n="about_list_1">Фокус на прибыли клиента, а не на количестве проектов</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="about_list_2">Прозрачная отчётность и доступ к аккаунтам</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="about_list_3">Честная коммуникация — если что-то не работает, говорим об этом</span></li>
+                    </ul>
+
+                    <div class="about-details">
+                        <p><strong data-i18n="about_geo_title">География работы:</strong> <span data-i18n="about_geo">Украина, страны ЕС, США</span></p>
+                        <p><strong data-i18n="about_clients_title">С кем работаем:</strong> <span data-i18n="about_clients">Интернет-магазины с оборотом от $10k/месяц</span></p>
+                    </div>
+                </div>
+                <div class="about-image" data-aos="fade-left">
+                    <img src="https://placehold.co/500x600/5854ED/ffffff?text=Qbic+Ads+Team" alt="Qbic Ads Team" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="process_title">Процесс работы — от аудита до масштаба</h2>
+
+            <div class="process-grid">
+                <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="process-number">01</div>
+                    <h3 data-i18n="process_1_title">Диагностика бизнеса и бриф</h3>
+                    <p data-i18n="process_1_desc">Смотрим ассортимент, маржинальность, гео, конкурентов и текущие источники трафика. Определяем hero-категории и быстрые гипотезы.</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="process-number">02</div>
+                    <h3 data-i18n="process_2_title">Стратегия и структура аккаунта</h3>
+                    <p data-i18n="process_2_desc">Договариваемся про цели: ROAS, объём заказов, минимальный чек. Строим схему кампаний под эти цели и согласуем её с вами.</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="process-number">03</div>
+                    <h3 data-i18n="process_3_title">Настройка и запуск</h3>
+                    <p data-i18n="process_3_desc">Подготавливаем фид, создаём кампании, добавляем конверсии, настраиваем отслеживание. Запускаем тестовый период 14 дней с контролем бюджета.</p>
+                </div>
+
+                <div class="process-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="process-number">04</div>
+                    <h3 data-i18n="process_4_title">Оптимизация и масштабирование</h3>
+                    <p data-i18n="process_4_desc">Раз в неделю оптимизируем и готовим промежуточный отчёт. Раз в месяц — полный отчёт. Масштабируем работающие сегменты, режем неэффективные.</p>
+                </div>
+            </div>
+
+            <div class="process-responsibilities" data-aos="fade-up">
+                <h3 data-i18n="process_resp_title">Что мы берём на себя, а что остаётся за вами</h3>
+                <p data-i18n="process_resp_intro">Чтобы реклама работала стабильно, нам нужен нормальный сайт и базовый порядок с аналитикой.</p>
+                <div class="resp-grid">
+                    <div class="resp-card">
+                        <h4 data-i18n="process_resp_us">Мы:</h4>
+                        <p data-i18n="process_resp_us_desc">рекламный аккаунт, фид, кампании, отчёты и предложения по росту</p>
+                    </div>
+                    <div class="resp-card">
+                        <h4 data-i18n="process_resp_you">С вашей стороны:</h4>
+                        <p data-i18n="process_resp_you_desc">актуальные цены и наличие, адекватные сроки доставки и реакция на лиды</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Google Ads Screenshots) -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="gallery_title">Как выглядят аккаунты, которые мы ведём</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="gallery_subtitle">Реальные скриншоты из кабинетов Google Ads наших клиентов</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://placehold.co/600x400/EFEFEF/333333?text=Performance+Max+Dashboard" alt="Performance Max Dashboard" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://placehold.co/600x400/EFEFEF/333333?text=Shopping+Campaigns" alt="Shopping Campaigns" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://placehold.co/600x400/EFEFEF/333333?text=ROAS+Growth+Chart" alt="ROAS Growth" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://placehold.co/600x400/EFEFEF/333333?text=Search+Campaigns" alt="Search Campaigns" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://placehold.co/600x400/EFEFEF/333333?text=Conversion+Tracking" alt="Conversion Tracking" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://placehold.co/600x400/EFEFEF/333333?text=Feed+Optimization" alt="Feed Optimization" loading="lazy">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="video_title">3 минуты о том, как мы работаем</h2>
+            <div class="video-container" data-aos="fade-up">
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <p data-i18n="video_placeholder">Видео в процессе подготовки. Пока что предлагаем созвониться в Zoom и показать всё вживую.</p>
+                    <a href="#contacts" class="btn btn-primary" data-i18n="video_cta">Записаться на созвон</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographic Section -->
+    <section id="infographic" class="infographic">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="infographic_title">Путь клиента с Qbic Ads</h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-marker">1</div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="timeline_1_title">День 1-3</h4>
+                        <p data-i18n="timeline_1_desc">Аудит и стратегия</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-marker">2</div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="timeline_2_title">День 4-14</h4>
+                        <p data-i18n="timeline_2_desc">Настройка и запуск</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="timeline-marker">3</div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="timeline_3_title">Неделя 3-4</h4>
+                        <p data-i18n="timeline_3_desc">Первые результаты</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-marker">4</div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="timeline_4_title">Месяц 2-3</h4>
+                        <p data-i18n="timeline_4_desc">Оптимизация и рост</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="400">
+                    <div class="timeline-marker">5</div>
+                    <div class="timeline-content">
+                        <h4 data-i18n="timeline_5_title">Месяц 4+</h4>
+                        <p data-i18n="timeline_5_desc">Стабильное масштабирование</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="testimonials_title">Что говорят наши клиенты</h2>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonial_1_text">Работали с двумя агентствами до Qbic Ads — оба просто жгли бюджет. Здесь впервые увидел нормальные отчёты и реальный рост выручки. ROAS вырос с 2.3 до 5.1 за три месяца.</p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/60x60/5854ED/ffffff?text=АК" alt="Андрей К." loading="lazy">
+                        <div>
+                            <h4 data-i18n="testimonial_1_name">Андрей К.</h4>
+                            <p data-i18n="testimonial_1_position">владелец интернет-магазина одежды (Украина)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonial_2_text">Главное отличие — они думают про мою прибыль, а не про свой процент. Честно сказали, что часть категорий лучше не рекламировать из-за низкой маржи. Сфокусировались на том, что даёт результат.</p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/60x60/5854ED/ffffff?text=MW" alt="Marcin W." loading="lazy">
+                        <div>
+                            <h4 data-i18n="testimonial_2_name">Marcin W.</h4>
+                            <p data-i18n="testimonial_2_position">ecommerce менеджер auto parts shop (Польша)</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-quote">
+                        <i class="fas fa-quote-left"></i>
+                    </div>
+                    <p class="testimonial-text" data-i18n="testimonial_3_text">Прозрачность на уровне. Еженедельные отчёты, доступ к аккаунту, объясняют каждое решение. Не просто 'мы сделали', а 'мы сделали это, потому что...'. Рекомендую.</p>
+                    <div class="testimonial-author">
+                        <img src="https://placehold.co/60x60/5854ED/ffffff?text=ОП" alt="Олена П." loading="lazy">
+                        <div>
+                            <h4 data-i18n="testimonial_3_name">Олена П.</h4>
+                            <p data-i18n="testimonial_3_position">маркетинг-директор beauty ecommerce (Украина)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Logos Section -->
+    <section id="client-logos" class="client-logos">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="clients_title">Работаем с ecommerce проектами в разных нишах</h2>
+            <div class="logos-marquee" data-aos="fade-up">
+                <div class="logos-track">
+                    <div class="logo-item"><span>Fashion & Apparel</span></div>
+                    <div class="logo-item"><span>Home & Garden</span></div>
+                    <div class="logo-item"><span>Auto Parts</span></div>
+                    <div class="logo-item"><span>Beauty & Cosmetics</span></div>
+                    <div class="logo-item"><span>Electronics</span></div>
+                    <div class="logo-item"><span>Sports & Outdoor</span></div>
+                    <div class="logo-item"><span>Kids & Toys</span></div>
+                    <div class="logo-item"><span>Pet Supplies</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Section -->
+    <section id="cases" class="cases">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="cases_title">Примеры результатов по ecommerce</h2>
+
+            <div class="cases-grid">
+                <!-- Case 1 -->
+                <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-header">
+                        <h3 data-i18n="case_1_title">Интернет-магазин одежды</h3>
+                        <span class="case-badge" data-i18n="case_1_country">Украина</span>
+                    </div>
+                    <div class="case-details">
+                        <p><strong data-i18n="case_niche">Ниша:</strong> <span data-i18n="case_1_niche">Женская одежда, средний чек $45</span></p>
+                        <p><strong data-i18n="case_period">Срок:</strong> <span data-i18n="case_1_period">4 месяца работы</span></p>
+                        <p><strong data-i18n="case_budget">Бюджет:</strong> $3,200/месяц</p>
+                    </div>
+                    <div class="case-results">
+                        <h4 data-i18n="case_results">Результаты:</h4>
+                        <div class="result-item">
+                            <span class="result-label">ROAS:</span>
+                            <span class="result-value">2.1 → 4.8</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_revenue">Выручка:</span>
+                            <span class="result-value success">+164%</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_cpa">CPA:</span>
+                            <span class="result-value success">-41%</span>
+                        </div>
+                    </div>
+                    <p class="case-description" data-i18n="case_1_desc">Разделили PMax на категории по маржинальности, добавили Shopping кампании под bestsellers, настроили ремаркетинг.</p>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-header">
+                        <h3 data-i18n="case_2_title">Товары для дома</h3>
+                        <span class="case-badge" data-i18n="case_2_country">США</span>
+                    </div>
+                    <div class="case-details">
+                        <p><strong data-i18n="case_niche">Ниша:</strong> <span data-i18n="case_2_niche">Home & Garden, средний чек $78</span></p>
+                        <p><strong data-i18n="case_period">Срок:</strong> <span data-i18n="case_2_period">3 месяца работы</span></p>
+                        <p><strong data-i18n="case_budget">Бюджет:</strong> $8,500/месяц</p>
+                    </div>
+                    <div class="case-results">
+                        <h4 data-i18n="case_results">Результаты:</h4>
+                        <div class="result-item">
+                            <span class="result-label">ROAS:</span>
+                            <span class="result-value">3.2 → 5.9</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_revenue">Выручка:</span>
+                            <span class="result-value success">+127%</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_orders">Заказы:</span>
+                            <span class="result-value success">+89%</span>
+                        </div>
+                    </div>
+                    <p class="case-description" data-i18n="case_2_desc">Перестроили структуру фида с custom labels под маржу и сезонность. Запустили Search кампании под brand и category запросы.</p>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="case-header">
+                        <h3 data-i18n="case_3_title">Магазин автотоваров</h3>
+                        <span class="case-badge" data-i18n="case_3_country">Польша</span>
+                    </div>
+                    <div class="case-details">
+                        <p><strong data-i18n="case_niche">Ниша:</strong> <span data-i18n="case_3_niche">Auto parts, средний чек €62</span></p>
+                        <p><strong data-i18n="case_period">Срок:</strong> <span data-i18n="case_3_period">5 месяцев работы</span></p>
+                        <p><strong data-i18n="case_budget">Бюджет:</strong> €6,800/месяц</p>
+                    </div>
+                    <div class="case-results">
+                        <h4 data-i18n="case_results">Результаты:</h4>
+                        <div class="result-item">
+                            <span class="result-label">ROAS:</span>
+                            <span class="result-value">1.9 → 4.2</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_revenue">Выручка:</span>
+                            <span class="result-value success">+203%</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_cpa">CPA:</span>
+                            <span class="result-value success">-38%</span>
+                        </div>
+                    </div>
+                    <p class="case-description" data-i18n="case_3_desc">Полностью пересобрали аккаунт с нуля. Создали сегментацию по брендам авто и популярности товаров.</p>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="case-header">
+                        <h3 data-i18n="case_4_title">Косметика и уход</h3>
+                        <span class="case-badge" data-i18n="case_4_country">Украина + ЕС</span>
+                    </div>
+                    <div class="case-details">
+                        <p><strong data-i18n="case_niche">Ниша:</strong> <span data-i18n="case_4_niche">Beauty & Skincare, средний чек $34</span></p>
+                        <p><strong data-i18n="case_period">Срок:</strong> <span data-i18n="case_4_period">6 месяцев работы</span></p>
+                        <p><strong data-i18n="case_budget">Бюджет:</strong> $4,100/месяц</p>
+                    </div>
+                    <div class="case-results">
+                        <h4 data-i18n="case_results">Результаты:</h4>
+                        <div class="result-item">
+                            <span class="result-label">ROAS:</span>
+                            <span class="result-value">3.4 → 6.1</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_revenue">Выручка UA:</span>
+                            <span class="result-value success">+87%</span>
+                        </div>
+                        <div class="result-item">
+                            <span class="result-label" data-i18n="case_revenue_eu">Выручка ЕС:</span>
+                            <span class="result-value success">+142%</span>
+                        </div>
+                    </div>
+                    <p class="case-description" data-i18n="case_4_desc">Создали зеркальную структуру под два рынка с отдельными фидами. Настроили Shopping + PMax + Search.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reporting Section -->
+    <section id="reporting" class="reporting">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="reporting_title">Отчётность и аналитика</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="reporting_subtitle">Примеры дашбордов Looker Studio, которые мы готовим для клиентов</p>
+
+            <div class="reporting-grid">
+                <div class="reporting-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://placehold.co/700x500/EFEFEF/333333?text=Looker+Studio+Dashboard+1" alt="Looker Studio Dashboard" loading="lazy">
+                    <h3 data-i18n="reporting_1_title">Основной дашборд по выручке и ROAS</h3>
+                </div>
+                <div class="reporting-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://placehold.co/700x500/EFEFEF/333333?text=Campaign+Performance" alt="Campaign Performance" loading="lazy">
+                    <h3 data-i18n="reporting_2_title">Детализация по кампаниям и категориям</h3>
+                </div>
+                <div class="reporting-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://placehold.co/700x500/EFEFEF/333333?text=Conversion+Funnel" alt="Conversion Funnel" loading="lazy">
+                    <h3 data-i18n="reporting_3_title">Воронка конверсий и attribution</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="pricing_title">Тарифы и условия работы</h2>
+
+            <div class="pricing-grid">
+                <!-- Pricing Plan 1 -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing_1_title">Старт для небольшого магазина</h3>
+                        <p class="pricing-description" data-i18n="pricing_1_desc">Подходит, если вы только запускаете Google Ads или возвращаетесь после неудачного опыта.</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-from" data-i18n="pricing_from">от</span>
+                        <span class="price-amount">$300</span>
+                        <span class="price-period" data-i18n="pricing_month">/месяц</span>
+                    </div>
+                    <div class="pricing-budget" data-i18n="pricing_1_budget">Рекламный бюджет до $5,000/месяц</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_1_feature_1">Аудит и первичная стратегия</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_1_feature_2">1-3 кампании (PMax или Search + Shopping)</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_1_feature_3">Еженедельная оптимизация и короткий отчёт</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_1_feature_4">Базовая настройка конверсий и Looker Studio</span></li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-outline" data-i18n="pricing_cta">Обсудить детали</a>
+                </div>
+
+                <!-- Pricing Plan 2 -->
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-badge" data-i18n="pricing_popular">Популярный</div>
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing_2_title">Рост и масштаб</h3>
+                        <p class="pricing-description" data-i18n="pricing_2_desc">Для работающих магазинов, где есть выручка, но Google Ads можно прокачать и масштабировать.</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-from" data-i18n="pricing_from">от</span>
+                        <span class="price-amount">$400</span>
+                        <span class="price-period" data-i18n="pricing_month">/месяц</span>
+                    </div>
+                    <div class="pricing-budget" data-i18n="pricing_2_budget">Бюджет $5,000 - $20,000/месяц</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_2_feature_1">Полная структура аккаунта под категории и маржу</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_2_feature_2">Несколько PMax, Shopping и Search кампаний</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_2_feature_3">Месячный отчёт с рекомендациями по росту</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_2_feature_4">Возможен бонус за перевыполнение плана</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_2_feature_5">Стратегические сессии раз в месяц</span></li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-primary" data-i18n="pricing_cta">Обсудить детали</a>
+                </div>
+
+                <!-- Pricing Plan 3 -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-header">
+                        <h3 data-i18n="pricing_3_title">Custom под крупный ecommerce</h3>
+                        <p class="pricing-description" data-i18n="pricing_3_desc">Если у вас несколько гео, языков и команд, и нужен гибкий формат работы по KPI.</p>
+                    </div>
+                    <div class="pricing-price">
+                        <span class="price-custom" data-i18n="pricing_custom">по договорённости</span>
+                    </div>
+                    <div class="pricing-budget" data-i18n="pricing_3_budget">Бюджет от $20,000/месяц и выше</div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_3_feature_1">Стратегия под несколько рынков и валют</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_3_feature_2">Согласование KPI по ROAS и прибыльности</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_3_feature_3">Регулярные стратегические сессии</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_3_feature_4">Приоритетная поддержка</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="pricing_3_feature_5">Интеграция с CRM и системами аналитики</span></li>
+                    </ul>
+                    <a href="#contacts" class="btn btn-outline" data-i18n="pricing_cta">Обсудить детали</a>
+                </div>
+            </div>
+
+            <!-- Audit CTA Block -->
+            <div class="audit-cta" data-aos="fade-up">
+                <h3 data-i18n="audit_title">Хотите понять, потянет ли ваш магазин Google Ads на нормальном уровне?</h3>
+                <p data-i18n="audit_desc">Оставьте заявку на бесплатный аудит. Посмотрим сайт, фид, текущую рекламу и честно скажем, есть ли потенциал роста или лучше сначала докрутить продукт.</p>
+                <div class="audit-buttons">
+                    <a href="#contacts" class="btn btn-primary btn-large" data-i18n="audit_cta">Получить аудит</a>
+                    <a href="https://t.me/qbicads" class="btn btn-secondary btn-large" target="_blank" data-i18n="audit_telegram">Связаться в Telegram</a>
+                </div>
+                <div class="audit-benefits">
+                    <h4 data-i18n="audit_benefits_title">Что вы получите по итогу аудита:</h4>
+                    <ul>
+                        <li><strong>1.</strong> <span data-i18n="audit_benefit_1">Техническая часть — конверсии, фид, базовая аналитика</span></li>
+                        <li><strong>2.</strong> <span data-i18n="audit_benefit_2">Структура рекламы — что работает, что сливает бюджет</span></li>
+                        <li><strong>3.</strong> <span data-i18n="audit_benefit_3">Потенциал роста — оценка по выручке и ROAS</span></li>
+                    </ul>
+                    <p class="audit-note" data-i18n="audit_note">Если поймём, что сейчас не время масштабировать рекламу — так и скажем вам.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="faq_title">Частые вопросы про работу с нами</h2>
+
+            <div class="faq-list">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <button class="faq-question">
+                        <span data-i18n="faq_1_question">Сколько нужно времени, чтобы увидеть первые результаты?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_1_answer">Обычно первые заказы идут уже в течение первых 3-7 дней после запуска. Адекватную статистику для выводов по ROAS и цене конверсии смотрим после 2-4 недель работы, в зависимости от бюджета и чеков.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <button class="faq-question">
+                        <span data-i18n="faq_2_question">Нужен ли сразу большой бюджет?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_2_answer">Нет. Для небольших магазинов стартуем с комфортного для вас бюджета и тестируем гипотезы. При росте эффективности масштабируемся постепенно, не раздувая расходы без результатов.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <button class="faq-question">
+                        <span data-i18n="faq_3_question">Чем вы отличаетесь от агентств, которые так же ведут Google Ads?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_3_answer">Мы работаем как перформанс-партнёр, а не просто подрядчик по кликам. Фокус на выручке и марже, прозрачных отчётах и адекватной коммуникации. Лучше взять 3 правильных проекта, чем 20 ради оборота.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <button class="faq-question">
+                        <span data-i18n="faq_4_question">Даёте ли вы гарантии результата?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_4_answer">Гарантировать конкретные цифры — безответственно, потому что результат зависит не только от рекламы, но и от сайта, ассортимента, цен, конкурентов. Мы гарантируем профессиональную работу, прозрачность и регулярную оптимизацию.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <button class="faq-question">
+                        <span data-i18n="faq_5_question">Можно ли работать без договора?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_5_answer">Да, мы работаем по ежемесячной модели. Оплата за текущий месяц, без долгих обязательств. Если не понравится — можете остановить сотрудничество в любой момент.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <button class="faq-question">
+                        <span data-i18n="faq_6_question">Кто будет иметь доступ к рекламному аккаунту?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p data-i18n="faq_6_answer">Аккаунт всегда остаётся вашим. Мы получаем доступ администратора для управления, но вы в любой момент можете зайти и посмотреть, что происходит. Никаких закрытых аккаунтов.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-cta" data-aos="fade-up">
+                <p data-i18n="faq_cta_text">Если у вас остались вопросы — проще всего обсудить их в Zoom или в мессенджере.</p>
+                <a href="#contacts" class="btn btn-primary" data-i18n="faq_cta_button">Задать свой вопрос</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="blog_title">Полезное про Google Ads и ecommerce</h2>
+
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-image">
+                        <img src="https://placehold.co/400x250/5854ED/ffffff?text=PMax+Tips" alt="PMax Article" loading="lazy">
+                        <span class="blog-category">Google Ads</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3 data-i18n="blog_1_title">Почему PMax сливает бюджет и как это исправить</h3>
+                        <p data-i18n="blog_1_excerpt">5 главных причин неэффективности Performance Max кампаний и пошаговый план оптимизации.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> <span data-i18n="blog_1_time">5 минут чтения</span></span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="https://placehold.co/400x250/5854ED/ffffff?text=Custom+Labels" alt="Custom Labels Article" loading="lazy">
+                        <span class="blog-category" data-i18n="blog_category_optimization">Оптимизация</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3 data-i18n="blog_2_title">Custom labels в Shopping: как разделить товары по маржинальности</h3>
+                        <p data-i18n="blog_2_excerpt">Практическое руководство по настройке custom labels для сегментации товаров в фиде.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> <span data-i18n="blog_2_time">7 минут чтения</span></span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="https://placehold.co/400x250/5854ED/ffffff?text=ROAS+vs+Profit" alt="ROAS Article" loading="lazy">
+                        <span class="blog-category" data-i18n="blog_category_analytics">Аналитика</span>
+                    </div>
+                    <div class="blog-content">
+                        <h3 data-i18n="blog_3_title">ROAS vs Profit: какую метрику смотреть в первую очередь</h3>
+                        <p data-i18n="blog_3_excerpt">Почему высокий ROAS не всегда означает прибыльность и как правильно считать эффективность.</p>
+                        <div class="blog-meta">
+                            <span><i class="far fa-clock"></i> <span data-i18n="blog_3_time">4 минуты чтения</span></span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="blog-cta" data-aos="fade-up">
+                <a href="#" class="btn btn-outline" data-i18n="blog_cta">Читать все статьи →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up" data-i18n="contacts_title">Давайте обсудим ваш ecommerce проект</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-i18n="contacts_subtitle">Можно оставить заявку через форму, написать в мессенджер или созвониться.</p>
+
+            <div class="contacts-content">
+                <!-- Contact Info -->
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-i18n="contact_phone_title">Телефон</h4>
+                            <a href="tel:+380630595594">+38 063 059 55 94</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-i18n="contact_email_title">Почта</h4>
+                            <a href="mailto:qbic.ads.digital@gmail.com">qbic.ads.digital@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fas fa-comments"></i>
+                        <div>
+                            <h4 data-i18n="contact_messengers_title">Мессенджеры</h4>
+                            <div class="messenger-links">
+                                <a href="https://t.me/qbicads" target="_blank" class="messenger-btn telegram">
+                                    <i class="fab fa-telegram"></i> Telegram
+                                </a>
+                                <a href="https://wa.me/380630595594" target="_blank" class="messenger-btn whatsapp">
+                                    <i class="fab fa-whatsapp"></i> WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="contact-note" data-i18n="contact_note">Напишите, из какой вы ниши и в каком регионе планируете рекламироваться, чтобы мы сразу перешли к делу.</p>
+                </div>
+
+                <!-- Contact Form -->
+                <form id="contactForm" class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder=" ">
+                        <label for="name" data-i18n="form_name">Как к вам обращаться</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="contact" name="contact" required placeholder=" ">
+                        <label for="contact" data-i18n="form_contact">Мессенджер или телефон</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="market" name="market" required>
+                            <option value="" disabled selected></option>
+                            <option value="ukraine" data-i18n-option="market_ukraine">Украина</option>
+                            <option value="europe" data-i18n-option="market_europe">Европа</option>
+                            <option value="usa" data-i18n-option="market_usa">США</option>
+                            <option value="other" data-i18n-option="market_other">Другой рынок</option>
+                        </select>
+                        <label for="market" data-i18n="form_market">Рынок</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder=" ">
+                        <label for="email" data-i18n="form_email">Email</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" placeholder=" ">
+                        <label for="company" data-i18n="form_company">Компания</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="budget" name="budget" required>
+                            <option value="" disabled selected></option>
+                            <option value="under-1k" data-i18n-option="budget_1">До $1,000</option>
+                            <option value="1k-5k" data-i18n-option="budget_2">$1,000 - $5,000</option>
+                            <option value="5k-10k" data-i18n-option="budget_3">$5,000 - $10,000</option>
+                            <option value="10k-20k" data-i18n-option="budget_4">$10,000 - $20,000</option>
+                            <option value="20k-plus" data-i18n-option="budget_5">$20,000+</option>
+                        </select>
+                        <label for="budget" data-i18n="form_budget">Бюджет на рекламу в месяц</label>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <textarea id="message" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="message" data-i18n="form_message">Кратко о проекте (ниша, средний чек, маржинальность)</label>
+                    </div>
+
+                    <div class="form-group">
+                        <select id="source" name="source">
+                            <option value="" disabled selected></option>
+                            <option value="google" data-i18n-option="source_google">Google поиск</option>
+                            <option value="recommendation" data-i18n-option="source_recommendation">Рекомендация</option>
+                            <option value="social" data-i18n-option="source_social">Социальные сети</option>
+                            <option value="advertising" data-i18n-option="source_advertising">Реклама</option>
+                            <option value="other" data-i18n-option="source_other">Другое</option>
+                        </select>
+                        <label for="source" data-i18n="form_source">Откуда узнали о нас</label>
+                    </div>
+
+                    <div class="form-group checkbox full-width">
+                        <input type="checkbox" id="privacy" name="privacy" required>
+                        <label for="privacy" data-i18n="form_privacy">Нажимая кнопку, вы соглашаетесь на обработку ваших данных для связи по проекту. Никакого спама, только по делу.</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large" data-i18n="form_submit">Получить аудит рекламы</button>
+
+                    <div id="formMessage" class="form-message hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Logo & Description -->
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2C10.059 2 2 10.059 2 20C2 29.941 10.059 38 20 38C29.941 38 38 29.941 38 20C38 10.059 29.941 2 20 2ZM20 6C27.72 6 34 12.28 34 20C34 27.72 27.72 34 20 34C12.28 34 6 27.72 6 20C6 12.28 12.28 6 20 6Z" fill="var(--primary)"/>
+                            <circle cx="16" cy="16" r="3" fill="var(--primary)"/>
+                            <circle cx="24" cy="16" r="3" fill="var(--primary)"/>
+                            <circle cx="16" cy="24" r="3" fill="var(--primary)"/>
+                            <circle cx="24" cy="24" r="3" fill="var(--primary)"/>
+                        </svg>
+                        <span>Qbic Ads</span>
+                    </div>
+                    <p class="footer-tagline" data-i18n="footer_tagline">Performance Google Ads для ecommerce</p>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div class="footer-column">
+                    <h4 data-i18n="footer_nav_title">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services" data-i18n="nav_services">Услуги</a></li>
+                        <li><a href="#process" data-i18n="nav_process">Процесс</a></li>
+                        <li><a href="#cases" data-i18n="nav_cases">Кейсы</a></li>
+                        <li><a href="#pricing" data-i18n="nav_pricing">Тарифы</a></li>
+                        <li><a href="#contacts" data-i18n="nav_contacts">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contacts -->
+                <div class="footer-column">
+                    <h4 data-i18n="footer_contacts_title">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li><a href="tel:+380630595594">+38 063 059 55 94</a></li>
+                        <li><a href="mailto:qbic.ads.digital@gmail.com">qbic.ads.digital@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social -->
+                <div class="footer-column">
+                    <h4 data-i18n="footer_social_title">Мессенджеры</h4>
+                    <div class="footer-social">
+                        <a href="https://t.me/qbicads" target="_blank" aria-label="Telegram">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="https://wa.me/380630595594" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Qbic Ads. <span data-i18n="footer_rights">Все права защищены.</span></p>
+                <a href="#" data-i18n="footer_privacy">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+
+</body>
+</html>
